@@ -18,7 +18,19 @@ header h1{
 .container{
     width: 30%;
     margin:auto  auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width:950px) {
+    .container{
+        width: 70%;
+        /* max-height: 30vh; */
+    }
+}
+@media screen and (max-width:700px) {
+    .container{
+        width: 100%;
+        /* max-height: 100px; */
+    }
 }
 section {
     display: flex;
@@ -33,4 +45,15 @@ section div{
     margin: 1rem;
     border: 1px solid red;
     color: aquamarine;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+.win{
+    background-color: green;
+}
+.lost{
+    background-color: rgb(194, 23, 23);
 }
